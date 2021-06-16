@@ -11,9 +11,9 @@ Music Streaming App </br>
 ## Screenshots
 <div style="display:flex;" >
 <img  src="Screenshot/Screenshot1.png" width="19%" >
-<img style="margin-left:100px;" src="Screenshot/Screenshot2.png" width="19%" >
-<img style="margin-left:100px;" src="Screenshot/Screenshot3.png" width="19%" >
-<img style="margin-left:100px;" src="Screenshot/Screenshot4.png" width="19%" >
-<img style="margin-left:100px;" src="Screenshot/Screenshot5.png" width="19%" >
+<img style="margin-left:100px;" src="Screenshot/Screenshot2.jpg" width="19%" >
+<img style="margin-left:100px;" src="Screenshot/Screenshot3.jpg" width="19%" >
+<img style="margin-left:100px;" src="Screenshot/Screenshot4.jpg" width="19%" >
+<img style="margin-left:100px;" src="Screenshot/Screenshot5.jpg" width="19%" >
 
 </div>
