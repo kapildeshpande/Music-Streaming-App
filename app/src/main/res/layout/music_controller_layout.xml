@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/relLayout3"
+        android:elevation="25dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <RelativeLayout
+                android:layout_weight="15"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/ic_launcher"
+                    android:id="@+id/album_image"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="75"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/relLayout1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Jenna Jenna"
+                        android:maxLines="1"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:id="@+id/song_name"
+                        android:layout_marginBottom="2dp"/>
+
+                    <TextView
+                        android:id="@+id/album_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Yo Yo Honey Singh"
+                        android:maxLines="1"/>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_weight="10"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_gravity="center">
+
+                <com.like.LikeButton
+                    app:icon_type="heart"
+                    app:icon_size="25dp"
+                    android:id="@+id/star_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:liked="false"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/play"
+                    android:onClick="onClickPlayPause"
+                    android:id="@+id/playPauseButton"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_below="@+id/relLayout3"
+        android:layout_above="@+id/relLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/shadow_background"/>
+
+        <ImageView
+            android:layout_width="400dp"
+            android:layout_height="400dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            android:id="@+id/center_image"/>
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/whitish"
+        android:id="@+id/relLayout2"
+        android:layout_alignParentBottom="true"
+        android:elevation="20dp">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/currProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginTop="2dp"
+            android:text="0:00"
+            android:textColor="@color/black"
+            android:layout_marginStart="5dp"/>
+
+        <TextView
+            android:id="@+id/maxProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/seekBar"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="5dp"
+            android:text="4:36"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp">
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/prevSong"
+                android:src="@drawable/skip_prev"
+                android:background="@color/whitish"
+                android:layout_margin="10dp"
+                android:onClick="onClickPrev"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/playPause"
+                android:src="@drawable/play"
+                app:fabSize="mini"
+                app:backgroundTint="@color/orange"
+                android:onClick="onClickPlayPause"
+                android:layout_marginBottom="10dp"/>
+
+            <ImageButton
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/nextSong"
+                android:src="@drawable/skip_next"
+                android:background="@color/whitish"
+                android:layout_margin="10dp"
+                android:onClick="onClickNext"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
