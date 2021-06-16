@@ -1,12 +1,9 @@
-# music-streaming-app
+# Music-Streaming-App
 
-<img src="/app/src/main/res/mipmap/ic_launcher.png" align="left" width="200" hspace="10" vspace="10">
+<img src="/app/src/main/res/mipmap/ic_launcher.png" width="150" vspace="10">
 Music Streaming App </br>
 </a>
 </div>
-
-</br> </br>
-</br> </br>
 
 ## Screenshots
 <div style="display:flex;" >
